@@ -24,16 +24,20 @@ derrotas = 0
     
 #Como jogar
 def como_jogar():
-    print ('\nJokenpô também é conhecido como Pedra, papel e tesoura')
+    os.system('cls')
+    print ('\nO jogo Jokenpô também é conhecido como Pedra, papel e tesoura')
     
-    print ('\n\nREGRAS')
-    print('\nNeste jogo, existem três formas: Pedra (punho fechado), Papel (mão aberta) e Tesoura (dedo indicador e médio levantados)')
-    print ('Pedra quebra tesoura, tesoura corta papel e papel encobre a pedra. Duas faces iguais, leva ao empate.')
-    sleep(5)
+    print ('{}\n\nREGRAS{}'.format(cores['amarelo'],cores['limpa']))
+    print('\nNeste jogo, existem três formas: \n- Pedra (punho fechado), \n- Papel (mão aberta) \n- Tesoura (dedo indicador e médio levantados)')
+    print ('\nPedra quebra tesoura, tesoura corta papel e papel encobre a pedra. Duas faces iguais, leva ao empate.')
+    print ('\nNo melhor de três são disputadas três rodas, vence quem vencer a maioria delas')
+    op = int (input ('\n\n\nPressione 1 para continuar\n '))
     
 #Sobre
 def sobre():
-    print ('\nEste jogo foi desenvolvido por Yasmin Souza Camargo')
+    os.system('cls')
+    print ('\nEste jogo foi desenvolvido por {}Yasmin Souza Camargo{}'.format(cores['amarelo'],cores['limpa']))
+    op = int (input ('\n\n\nPressione 1 para continuar\n '))
     
 #Jogar contra o computador
 def modo_computador():
